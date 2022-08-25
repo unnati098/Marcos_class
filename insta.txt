@@ -129,6 +129,9 @@ PS C:\Users\2093906\Desktop\vue_project\vue-foods> npm run serve
 
 
 
+To install node-modules run "npm install"   command in terminal
+
+
 
 
 
