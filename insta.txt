@@ -1,0 +1,135 @@
+node -v
+
+vue --version 
+if not working do   npm install -g @vue/cli
+
+press windows button + r open run .... on keyboard and type "  control sysdm.cpl,,3  "
+
+it's open system properties
+go to enviroment variable
+and edit path variable and paste this 2 lines
+
+C:\Users\cisco\AppData\Roaming\npm
+C:\Program Files\nodejs\node_modules\npm
+
+powershell Set-ExecutionPolicy RemoteSigned
+
+
+now create new folder and open with visual studio  and open terminal 
+
+check vue --version
+ 
+
+now type
+vue create vue-foods
+
+select manual setting 
+
+and .....
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Babel, Router, Linter   /// choose this 3
+? Choose a version of Vue.js that you want to start the project with 3.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) 
+
+choose Yes
+
+
+Vue CLI v5.0.8
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Babel, Router, Linter
+? Choose a version of Vue.js that you want to start the project with 3.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a linter / formatter config: Standard     /////here choose standard
+? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter> to proceed)
+>(*) Lint on save
+ ( ) Lint and fix on commit
+
+
+
+
+
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\2093906\Desktop\vue_project> vue --version
+@vue/cli 5.0.8
+PS C:\Users\2093906\Desktop\vue_project> vue create vue-foods
+
+
+Vue CLI v5.0.8
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Babel, Router, Linter
+? Choose a version of Vue.js that you want to start the project with 3.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a linter / formatter config: Standard
+? Pick additional lint features: Lint on save
+? Where do you prefer placing config for Babel, ESLint, etc.? In package.json
+? Save this as a preset for future projects? Yes
+? Save preset as: my-setup
+
+🎉  Preset my-setup saved in C:\Users\2093906\.vuerc
+
+
+Vue CLI v5.0.8
+✨  Creating project in C:\Users\2093906\Desktop\vue_project\vue-foods.
+🗃  Initializing git repository...
+⚙️  Installing CLI plugins. This might take a while...
+
+
+added 849 packages, and audited 850 packages in 22s
+
+88 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+
+added 151 packages, and audited 1001 packages in 6s
+
+128 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+🎉  Successfully created project vue-foods. 
+👉  Get started with the following commands:
+
+ $ cd vue-foods
+ $ npm run serve
+
+PS C:\Users\2093906\Desktop\vue_project> cd .\vue-foods\
+PS C:\Users\2093906\Desktop\vue_project\vue-foods> npm run serve
+
+> vue-foods@0.1.0 serve
+> vue-cli-service serve
+
+ INFO  Starting development server...
+
+
+ DONE  Compiled successfully in 5521ms                                                                                                                                                                              10:02:22 a.m.
+
+
+  App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://172.26.22.18:8080/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+
+
+
+
+
+
+
+
