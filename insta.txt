@@ -131,8 +131,86 @@ PS C:\Users\2093906\Desktop\vue_project\vue-foods> npm run serve
 
 To install node-modules run "npm install"   command in terminal
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<script>
+import SildeBar from 'src/components/SideBar.vue=';
+</script>
+
+<script>
+import SildeBar from '@/components/SideBar.vue=';
+</script>
+
+we can replace src with @ here 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+to set code use tab and shift keys
 
 
+#######################################  Now for setting up server ##########################
+
+first create folder name server
+
+and now follow steps in new terminal
+
+          Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\2093906\Desktop\vue_project> cd .\server\
+PS C:\Users\2093906\Desktop\vue_project\server> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (server) server
+version: (1.0.0)
+description: Server with node.js, express, sequelize, cors, mysql
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords: node, express, sequelize, cors, mysql
+author:
+license: (ISC)
+About to write to C:\Users\2093906\Desktop\vue_project\server\package.json:
+
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server with node.js, express, sequelize, cors, mysql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "sequelize",
+    "cors",
+    "mysql"
+  ],
+  "author": "",
+  "license": "ISC"
+}
 
 
+Is this OK? (yes)
+PS C:\Users\2093906\Desktop\vue_project\server> 
+
+PS C:\Users\2093906\Desktop\vue_project\server> npm install express sequelize mysql2 body-parser cors --save
+
+added 93 packages, and audited 94 packages in 4s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\2093906\Desktop\vue_project\server> 
 
