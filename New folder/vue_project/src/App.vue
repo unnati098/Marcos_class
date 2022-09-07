@@ -63,6 +63,7 @@
 </template>
 
 <script>
+import ProductDataService from '@/services/ProductDataService'
 import Sidebar from '@/components/SideBar.vue'
 
 export default {
@@ -72,7 +73,7 @@ export default {
   data () {
     return {
       showSideBar: false,
-      inventory: [{ id: 1, name: 'AlooChat', photo: 'aloochat.jpg', price: { USD: 5.00, CAD: 12.50 }, type: 'Food' }, { id: 1, name: 'AlooChat', photo: 'aloochat.jpg', price: { USD: 5.00, CAD: 12.50 }, type: 'Food' }],
+      inventory: [],
       cart: {}
     }
   },
@@ -96,6 +97,13 @@ export default {
         return acc + curr
       }, 0)
     }
+  },
+  mounted () {
+    ProductDataService.getAll()
+      .then(response => {
+        this.inventory = response.data
+        console.log(response.data)
+      })
   }
 }
 </script>

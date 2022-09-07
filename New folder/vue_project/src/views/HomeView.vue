@@ -22,7 +22,7 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    ${{ (product.price.CAD).toFixed(2)}}
+                                    ${{ (product.price).toFixed(2)}}
                                 </div>
                             </div>
                             <!-- Product actions-->
