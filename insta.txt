@@ -214,3 +214,21 @@ added 93 packages, and audited 94 packages in 4s
 found 0 vulnerabilities
 PS C:\Users\2093906\Desktop\vue_project\server> 
 
+
+
+########################################################################################################
+
+PS C:\Users\2093906\Desktop\vue_project\server> node .\server.js
+Server is running on port 8080.
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'products' AND TABLE_SCHEMA = 'db_product'
+Executing (default): CREATE TABLE IF NOT EXISTS `products` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255), `photo` VARCHAR(255), `price` REAL, `description` TEXT, `type` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `products`
+
+
+##################################################################################################
+
+to install bootstrap use this
+
+PS C:\Users\2093906\Desktop\vue_project\vue-foods>      npm install bootstrap jquery popper.js
+
+
